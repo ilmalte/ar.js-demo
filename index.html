@@ -5,7 +5,7 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
-        <a-marker type="pattern" preset="custom" url="https://raw.githubusercontent.com/ilmalte/ar.js-demo/master/assets/marker.patt" >
+        <a-marker preset="kanji">
             <a-entity
             position="0 0 0"
             rotation="0 0 0"
@@ -13,8 +13,7 @@
             gltf-model="https://raw.githubusercontent.com/alteous/glTF-Sample-Models-Official/master/2.0/BrainStem/glTF/BrainStem.gltf"
             ></a-entity>
         </a-marker>
-        <!-- <a-entity camera></a-entity> -->
-        <a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/ilmalte/ar.js-demo/master/assets/marker.patt'></a-marker-camera>
+        <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
